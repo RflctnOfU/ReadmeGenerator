@@ -1,0 +1,27 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "An app to generate professional quality readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RflctnOfU/ReadmeGenerator.git"
+  },
+  "keywords": [
+    "readme",
+    "node",
+    "app"
+  ],
+  "author": "Kris Marshall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RflctnOfU/ReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/RflctnOfU/ReadmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
