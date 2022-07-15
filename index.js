@@ -57,29 +57,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('big success!'))
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('README.md has been successfully created!'))
 }
-// let markGen = generateMarkdown(answers)
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then((answers) =>
-            writeToFile('booyah.md', generateMarkdown(answers)), (err) => err ? console.error(err) : console.log('success'))
-    // fs.writeFile('answers.json', JSON.stringify(answers, null, '\t'), (err) => err ? console.error(err) : console.log('success'))).then((fs.writeFile), writeToFile('README.md', generateMarkdown))
-
+            writeToFile('README.md', generateMarkdown(answers)), (err) => err ? console.error(err) : console.log('success'))
 }
 
 // Function call to initialize app
 init();
-
-
-
-
-
-
-
-
-
-// Description:
-// 
