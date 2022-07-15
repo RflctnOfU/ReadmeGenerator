@@ -3,6 +3,7 @@ const inquirer = require('inquirer')
 const fs = require('fs')
 const path = require('path')
 const markdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -40,7 +41,7 @@ const questions = [
         type: 'list',
         message: 'Under which license will this app be covered?',
         name: 'license',
-        choices: ['MIT', 'ISC', 'GNU GPLv3', 'Apache License 2.0']
+        choices: ['MIT', 'ISC', 'GNU GPLv3', 'Apache License 2.0', 'none']
     },
     {
         type: 'input',
@@ -56,18 +57,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    // fs.writeFile('readme.json', JSON.stringify(fileName, null, '\t'), (err) => err ? console.error(err) : console.log('success'));
-    markdown(fileName);
-    fs.writeFile('README2.md', generateMarkdown(data), (err) => err ? console.error(err) : console.log('big success!'))
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('big success!'))
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then((response) =>
-            fs.writeFile('readme.json', JSON.stringify(response, null, '\t'), (err) => err ? console.error(err) : console.log('success')))
-
-
+        .then((answers) =>
+            fs.writeFile('answers.json', JSON.stringify(answers, null, '\t'), (err) => err ? console.error(err) : console.log('success'))).then(setTimeout(() => writeToFile('README.md', generateMarkdown), 10000))
 }
 
 // Function call to initialize app
