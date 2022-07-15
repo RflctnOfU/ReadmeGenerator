@@ -59,12 +59,15 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('big success!'))
 }
+// let markGen = generateMarkdown(answers)
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then((answers) =>
-            fs.writeFile('answers.json', JSON.stringify(answers, null, '\t'), (err) => err ? console.error(err) : console.log('success'))).then(setTimeout(() => writeToFile('README.md', generateMarkdown), 10000))
+            writeToFile('booyah.md', generateMarkdown(answers)), (err) => err ? console.error(err) : console.log('success'))
+    // fs.writeFile('answers.json', JSON.stringify(answers, null, '\t'), (err) => err ? console.error(err) : console.log('success'))).then((fs.writeFile), writeToFile('README.md', generateMarkdown))
+
 }
 
 // Function call to initialize app

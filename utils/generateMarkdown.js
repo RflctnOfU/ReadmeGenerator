@@ -30,14 +30,14 @@ function generateMarkdown(data) {
   -[Questions](#questions)
 
   ---
-  ## Installation {#installation}
+  ## Installation
 
   \`\`\`bash
   ${data.install}
   \`\`\`
 
   ---
-  ## Usage {#usage}
+  ## Usage
 
   \`\`\`
   ${data.usage}
@@ -51,19 +51,19 @@ function generateMarkdown(data) {
   \`\`\`
 
   ---
-  ## Contributing {#contributing}
+  ## Contributing
 
   If you would like to contribute, please adhere to the following guidelines:
   >${data.contribution}
 
   ---
-  ## Tests {#tests}
+  ## Tests
 
   How to run my tests:
   >${data.test}
   
   ---
-  ## Questions {#questions}
+  ## Questions
 
   My [Github](github.com/${data.github}) profile.
 
