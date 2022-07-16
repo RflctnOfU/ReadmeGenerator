@@ -1,10 +1,10 @@
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)     
-  # j
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)     
+  # Readme Generator
 
   ---
   ## Description
 
-  j
+  Readme Generator is a node.js app that accepts user input and creates a professional quality readme.md.  It makes use of the inquirer module.
 
   ---
   ## Table of Contents
@@ -20,38 +20,38 @@
   ## Installation
 
   ```bash
-  j
+  n/a
   ```
 
   ---
   ## Usage
 
   ```
-  j
+  In the terminal, enter: node index.js
   ```
 
   ---
   ## License
 
   
-  This project is licensed under the ISC license.
+  This project is licensed under the MIT license.
   
 
   ---
   ## Contributing
 
   If you would like to contribute, please adhere to the following guidelines:
-  >j
+  >n/a
 
   ---
   ## Tests
 
   How to run my tests:
-  >j
+  >n/a
   
   ---
   ## Questions
 
-  My [Github](https://github.com/j) profile.
+  My [Github](https://github.com/RflctnOfU) profile.
 
-  If you have questions, send me an [email](j)
+  If you have questions, send me an [email](rflctnofu@hotmail.com)
